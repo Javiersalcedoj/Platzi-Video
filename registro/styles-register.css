@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+}
+.header {
+    background-color: #21C08B;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.register {
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.register__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.register__container a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.register__container a:hover {
+    text-decoration: underline;
+}
+.register__container--form {
+    display: flex;
+    flex-direction: column;   
+}
+.register__container--form label {
+    font-size: 14px;
+}
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder {
+    color: white;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+.button:hover {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.footer {
+    background-color: #AB88FF;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        justify-content: center;
+    }
+    .register__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .login__container--remember-me {
+        flex-direction: column;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
